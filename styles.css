@@ -53,6 +53,18 @@ a#profile-link:hover {
     font-size: 30px;
 }
 
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.project-img {
+    height: 100%;
+    width: 100%;
+}
 .pj-section {
     background: var(--color5);
     padding: 10rem 5rem;
