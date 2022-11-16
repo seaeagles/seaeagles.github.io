@@ -1,22 +1,46 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --color1: #CAD2C5;
+    --color2: #84A98C;
+    --color3: #52796F;
+    --color4: #74c69d;
+    --color5: #2F3E46;
 }
 
 body {
+    background: linear-gradient(30deg,
+                        var(--color3)10%,
+                        var(--color4)40%),
+                        var(--color1)50%;
+
+    font-family: sans-serif;
 }
+
+
 /* 
 need to add a media query */ 
 
 nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     position: fixed;
     top: 0;
-    width: 90%;
+    width: 100%;
     z-index: 30;
     box-shadow: 0 3px 3px 0px #333;
+}
+
+a#profile-link {
+    color: white;
+    text-decoration: none;
+}
+a#profile-link:hover {
+    color: #FF9F1c;
 }
 
 #welcome-section {
@@ -26,13 +50,25 @@ nav {
     align-items: center;
     width: 100%;
     height: 100vh;
+    font-size: 30px;
 }
+
+.pj-section {
+    background: var(--color5);
+    padding: 10rem 5rem;
+    margin: 0;
+}
+
+.education-section {
+
+}
+
 
 /* media object for about section */ 
 
 .about-grid {
     max-width: 500px;
-    background-color: #333;
+    background-color: var(--color5);
     color: white;
     border-radius: 8px;
     overflow: hidden;
@@ -58,4 +94,8 @@ nav {
     grid-column: 2 / -1;
     grid-row: 2;
     padding: 0.5rem;
+}
+.contacts {
+    grid-column: 2 / span 3;
+    padding: 5px;
 }
