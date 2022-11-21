@@ -3,9 +3,8 @@
     --gold: #f2c600;
     --offwhite: #fbfbfb;
     --lightblue: #ecf0f6;
-    --blue: #3C6E71;
+    --flatgreen: #3C6E71;
     --slate: #353535;
-    --slateblue: #3d5e98;
 }
 
 * {
@@ -162,8 +161,8 @@ section.projects a:hover {
 }
 
 .products .product-card {
-    color: var(--blue);
-    border: 2px solid var(--blue);
+    color: var(--flatgreen);
+    border: 2px solid var(--flatgreen);
     border-radius: 0.75rem;
     padding: 1.5rem;
     text-align: center;
@@ -186,7 +185,7 @@ section.projects a:hover {
 .products .button {
     display: block;
     color: white;
-    background-color: var(--blue);
+    background-color: var(--flatgreen);
     transform: translateY(40px);
 }
 
@@ -223,8 +222,8 @@ section.projects a:hover {
 
  .newsletter {
     padding: 3rem;
-    background-color: var(--blue);
-    background: linear-gradient(#27365196, var(--blue)); 
+    background-color: var(--flatgreen);
+    background: linear-gradient(#27365196, var(--flatgreen)); 
  }
 .newsletter h2 {
     text-align: center;
@@ -252,7 +251,7 @@ section.projects a:hover {
  .newsletter button {
     font-size: 1.5rem;
     color: white;
-    background: var(--slateblue);
+    background: var(--gold);
     flex-grow: 1;
  }
 
