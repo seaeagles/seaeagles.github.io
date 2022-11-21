@@ -1,113 +1,272 @@
+:root {
+    --main: #284B63;
+    --gold: #f2c600;
+    --offwhite: #fbfbfb;
+    --lightblue: #ecf0f6;
+    --blue: #3C6E71;
+    --slate: #353535;
+    --slateblue: #3d5e98;
+}
+
 * {
     box-sizing: border-box;
-    margin: 0;
 }
-
-:root {
-    --color1: #CAD2C5;
-    --color2: #84A98C;
-    --color3: #52796F;
-    --color4: #74c69d;
-    --color5: #2F3E46;
-}
-
 body {
-    background: linear-gradient(30deg,
-                        var(--color3)10%,
-                        var(--color4)40%),
-                        var(--color1)50%;
-
-    font-family: sans-serif;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
+/* Utility Classes */
 
-/* 
-need to add a media query */ 
-
-nav {
+.flex {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 30;
-    box-shadow: 0 3px 3px 0px #333;
+    flex-wrap: wrap;
 }
 
-a#profile-link {
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.gap {
+    gap: 24px 8px;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.center {
+    align-items: center;
+}
+
+.justified {
+    justify-content: center;
+}
+.spacebetween {
+    justify-content: space-between;
+}
+.button {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    max-width: 250px;
+    text-align: center;
+    white-space: nowrap;
+    border: none;
+}
+
+.small {
+    font-size: 12px;
+}
+.black-text {
+    color: black;
+    font-weight: 300;
+}
+
+/* end */
+
+
+
+/* Nav styles */
+
+header {
+    margin-right: auto;
+}
+header h1 {
+    margin: 0 1rem;
+}
+nav, main {
+    background: var(--main);
+    color: white;
+}
+nav {
+    padding: 1rem;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li a {
     color: white;
     text-decoration: none;
-}
-a#profile-link:hover {
-    color: #FF9F1c;
+    padding: 1rem;
 }
 
-#welcome-section {
+/* Hero Styles */
+.hero {
+    padding: 8rem 1rem;
+    background-color: linear-gradient(var(--main), blue);
+}
+.card {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin: 0 2rem 4rem;
+    justify-content: space-around;
     align-items: center;
-    width: 100%;
-    height: 100vh;
-    font-size: 30px;
+    font-size: 1.3rem;
 }
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 2rem;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-.project-img {
-    height: 100%;
-    width: 100%;
-}
-.pj-section {
-    background: var(--color5);
-    padding: 10rem 5rem;
-    margin: 0;
-}
-
-.education-section {
-
-}
-
-
-/* media object for about section */ 
-
-.about-grid {
-    max-width: 500px;
-    background-color: var(--color5);
-    color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 50% 50%;
-    margin-top: 50px;
-
-}
-.about-grid > img {
-    width: 100%;
-    height: 100%;
-    grid-row: span 2;
+.card img {
+    border: 1px solid white;
+    border-radius: 3rem;
+    max-width: 50%;
     object-fit: cover;
 }
+.card h1, .card h5 {
+    flex-shrink: 2;
+}
 
-.about-grid > h2 {
-    grid-column: 2 / span 3;
-    padding: 0.5rem;
+.hero .button {
+    color: var(--main);
+    background-color: var(--gold);
+}
 
+
+/* Project Styles */
+
+section.projects {
+    background-color: var(--offwhite);
+    color: var(--main);
+    padding: 3rem 1rem;
 }
-.about-grid > p {
-    grid-column: 2 / -1;
-    grid-row: 2;
-    padding: 0.5rem;
+
+section.projects a.button {
+    color: var(--offwhite);
+    background-color: var(--main);
+    transition: all 1s;
 }
-.contacts {
-    grid-column: 2 / span 3;
-    padding: 5px;
+
+section.projects a:hover {
+    color: var(--main);
+    background-color: var(--gold);
+    transition: all 1s;
 }
+
+.projects .card {
+    border: 2px solid var(--main);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+/* Products Section Styles */
+
+.products {
+    background-color: white;
+}
+.products h2 {
+    margin: 0;
+    text-align: center;
+}
+.products svg {
+    fill: var(--lightblue);
+}
+
+.products .product-card {
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.product-card ul li {
+    padding: 4px 0;
+    border: 1px solid transparent;
+    margin: 1px;
+}
+.product-card ul li:hover {
+    background-color: silver;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.products .price {
+    margin-bottom: -25px;
+}
+
+.products .button {
+    display: block;
+    color: white;
+    background-color: var(--blue);
+    transform: translateY(40px);
+}
+
+.products li::before {
+    content: '✓';
+    margin-right: 4px;
+    color: var(--gold);
+}
+
+.grid {
+    margin: 1rem 0;
+    gap: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 600px) and (min-width: 400px) {
+    .gold {
+        grid-column: span 2;
+    }
+}
+@media screen and (max-width: 400px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+ /* Newsletter Form Styles */
+
+ .newsletter {
+    padding: 3rem;
+    background-color: var(--blue);
+    background: linear-gradient(#27365196, var(--blue)); 
+ }
+.newsletter h2 {
+    text-align: center;
+}
+ .newsletter form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 1.5rem;
+ }
+
+ .newsletter input {
+    flex-grow: 2;
+    padding: 1rem;
+    border-radius: 2rem;
+    color: var(--main);
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0px 8px 8px rgba(0,0,0,0.5);
+
+ }
+
+ .newsletter button {
+    font-size: 1.5rem;
+    color: white;
+    background: var(--slateblue);
+    flex-grow: 1;
+ }
+
+ /* Footer Styles */
+
+ footer {
+    background-color: var(--main);
+    padding: 3rem;
+    color: var(--lightblue);
+ }
+
+ footer ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+ }
