@@ -5,6 +5,7 @@
     --lightblue: #ecf0f6;
     --flatgreen: #3C6E71;
     --slate: #353535;
+    --lightgreen: #84A98C;
 }
 
 * {
@@ -149,18 +150,23 @@ section.projects a:hover {
 
 /* Products Section Styles */
 
-.products {
+.experience {
     background-color: white;
 }
-.products h2 {
+.experience h2 {
     margin: 0;
     text-align: center;
 }
-.products svg {
+.experience svg {
     fill: var(--lightblue);
 }
 
-.products .product-card {
+a.button#fixbutton {
+    margin: auto;
+    margin-top: 14rem;
+}
+
+.experience .product-card {
     color: var(--flatgreen);
     border: 2px solid var(--flatgreen);
     border-radius: 0.75rem;
@@ -168,6 +174,9 @@ section.projects a:hover {
     text-align: center;
 }
 
+.product-card#product-card1 > img {
+    margin-top: 2.7rem;
+}
 .product-card ul li {
     padding: 4px 0;
     border: 1px solid transparent;
@@ -178,18 +187,18 @@ section.projects a:hover {
     border: 1px solid black;
     border-radius: 4px;
 }
-.products .price {
+.experience .price {
     margin-bottom: -25px;
 }
 
-.products .button {
+.experience .button {
     display: block;
     color: white;
     background-color: var(--flatgreen);
     transform: translateY(40px);
 }
 
-.products li::before {
+.experience li::before {
     content: '✓';
     margin-right: 4px;
     color: var(--gold);
@@ -250,8 +259,8 @@ section.projects a:hover {
 
  .newsletter button {
     font-size: 1.5rem;
-    color: white;
-    background: var(--gold);
+    color: var(--offwhite);
+    background: #ffca3a;
     flex-grow: 1;
  }
 

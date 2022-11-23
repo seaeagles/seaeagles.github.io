@@ -20,11 +20,10 @@
             <h1>David Miner - Portfolio</h1>
         </header>
         <ul class="flex center">
-            <li><a href="">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#projects"></a>Projects</li>
-            <li><a href=""></a>Products</li>
-            <li><a href=""></a>Contact</li>
-            <li><a href=""></a>Posts</li>
+            <li><a href="#workexperience"></a>Work Experience</li>
+            <li><a href="#contact"></a>Contact</li>
         </ul>
     </nav>
     <main>
@@ -35,9 +34,12 @@
                 <h5>I am a Frontend Developer in NY</h5>
                 <a class="button" href="">Go to page</a>
             </div>
-                <img height="200" src="img/birds.svg"/>
+                <img height="400" src="img/birds.svg"/>
              </div>
             </section>
+
+        </section>
+
             <section id="projects" class="projects">
                 <div class="card">
                     <div class="text">
@@ -45,7 +47,7 @@
                         <p>This is a project of a tribute page</p>
                         <a href="" class="button">View Project</a>
                     </div>
-                    <img src="img/Surgery.png" alt="" />
+                    <img src="" alt="" />
                 </div>
                 <div class="card reverse">
                     <div class="text">
@@ -53,7 +55,7 @@
                         <p>This is a project of a product landing page.</p>
                         <a href="" class="button">View Project</a>
                     </div>
-                    <img src="img/Light bulb.png" alt="" />
+                    <img src="" alt="" />
                 </div>
                 <div class="card">
                     <div class="text">
@@ -61,40 +63,44 @@
                         <p>This is a project of a technical document page</p>
                         <a href="" class="button">View Project</a>
                     </div>
-                    <img src="img/404 – Not Found V1.png" alt="" />
+                    <img src="" alt="" />
                 </div>
             </section>
-            <section class="products">
+            <section id="workexperience" class="experience">
                 <h2>Products Gallery</h2>
+
+                <div class="flex gap justified products">
+                    
+                    <div class="product-card" id="product-card1">
+                        <h3>Application Support Analyst</h3>
+                        <img src="img/calero_mdsl_Logo.svg" height="70" width="150" alt="calero-mdsl logo"/>
+                        <ul class="black-text">
+                            <li>TEM/Fintech app. support</li>
+                            <li>Microsoft SQL(SMSS), database management</li>
+                            <li>Product implementation & QA testing</li>
+                        </ul>
+                        <p class="black-text small">Years employed</p>
+                        <p class="price">May 2021 - Present</p>
+                        <a href="https://www.caleromdsl.com/" class="button" id="fixbutton">Visit them here</a>
+                    </div>
                 <div class="flex gap justified products">
 
                     <div class="product-card">
-                        <h3>Product 1</h3>
-                        <svg role="img" height="64" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>PhonePe</title><path d="M10.206 9.941h2.949v4.692c-.402.201-.938.268-1.34.268-1.072 0-1.609-.536-1.609-1.743V9.941zm13.47 4.816c-1.523 6.449-7.985 10.442-14.433 8.919C2.794 22.154-1.199 15.691.324 9.243 1.847 2.794 8.309-1.199 14.757.324c6.449 1.523 10.442 7.985 8.919 14.433zm-6.231-5.888a.887.887 0 0 0-.871-.871h-1.609l-3.686-4.222c-.335-.402-.871-.536-1.407-.402l-1.274.401c-.201.067-.268.335-.134.469l4.021 3.82H6.386c-.201 0-.335.134-.335.335v.67c0 .469.402.871.871.871h.938v3.217c0 2.413 1.273 3.82 3.418 3.82.67 0 1.206-.067 1.877-.335v2.145c0 .603.469 1.072 1.072 1.072h.938a.432.432 0 0 0 .402-.402V9.874h1.542c.201 0 .335-.134.335-.335v-.67z"/></svg>
+                        <h3>Technical Support Engineer</h3>
+                        <img src="img/sutherland-global-services-vector-logo.svg" 
+                        alt="Sutherland Global logo"/>
+                        <img height="70" width="70" src="img/Proofpoint-vector-logo.svg" alt="proofpoint logo"/>
                         <ul class="black-text">
-                            <li>Benefit 1</li>
-                            <li>Benefit 2</li>
-                            <li>Benefit 3</li>
+                            <li>SMTP, Email Security, Firewalls</li>
+                            <li>Bash (unix shell)</li>
+                            <li>Salesforce, JIRA, CRM</li>
                         </ul>
-                        <p class="black-text small">Starting at only</p>
-                        <p class="price">$200</p>
-                        <a href="" class="button">Order Now!</a>
+                        <p class="black-text small">Years employed</p>
+                        <p class="price">April 2020 - May 2021</p>
+                        <a href="https://www.sutherlandglobal.com/" class="button">Visit them here</a>
                     </div>
-                    <div class="flex gap justified products">
                     
-                        <div class="product-card">
-                            <h3>Product 1</h3>
-                            <svg role="img" height="64" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>PhonePe</title><path d="M10.206 9.941h2.949v4.692c-.402.201-.938.268-1.34.268-1.072 0-1.609-.536-1.609-1.743V9.941zm13.47 4.816c-1.523 6.449-7.985 10.442-14.433 8.919C2.794 22.154-1.199 15.691.324 9.243 1.847 2.794 8.309-1.199 14.757.324c6.449 1.523 10.442 7.985 8.919 14.433zm-6.231-5.888a.887.887 0 0 0-.871-.871h-1.609l-3.686-4.222c-.335-.402-.871-.536-1.407-.402l-1.274.401c-.201.067-.268.335-.134.469l4.021 3.82H6.386c-.201 0-.335.134-.335.335v.67c0 .469.402.871.871.871h.938v3.217c0 2.413 1.273 3.82 3.418 3.82.67 0 1.206-.067 1.877-.335v2.145c0 .603.469 1.072 1.072 1.072h.938a.432.432 0 0 0 .402-.402V9.874h1.542c.201 0 .335-.134.335-.335v-.67z"/></svg>
-                            <ul class="black-text">
-                                <li>Benefit 1</li>
-                                <li>Benefit 2</li>
-                                <li>Benefit 3</li>
-                            </ul>
-                            <p class="black-text small">Starting at only</p>
-                            <p class="price">$200</p>
-                            <a href="" class="button">Order Now!</a>
-                        </div>
-                        <div class="flex gap justified products">
+                        <!-- <div class="flex gap justified products">
                     
                             <div class="product-card">
                                 <h3>Product 1</h3>
@@ -108,12 +114,12 @@
                                 <p class="price">$200</p>
                                 <a href="" class="button">Order Now!</a>
                             </div>
-                </div>
+                </div> -->
             </section>
 
-            <section class="newsletter">
-                <h2>Sign up for my Newsletter!</h2>
-                <form action="" method="">
+            <section id="contact" class="newsletter">
+                <h2>Contact me for further details</h2>
+                <form action="" method="post">
                     <label for="signup">Email:</label>
                     <input id="signup" type="email" placeholder="Please provide your email">
 
@@ -124,7 +130,7 @@
     <footer>
         <ul class="socialmedia">
             <li><a href="https://github.com/seaeagles" target="_blank"><img height="32" fill="white" src="img/github.svg" alt="github logo"></a></li>
-            <li><a href=""><img height="32" fill="white" src="img/linkedin.svg" alt="LinkedIN logo"></a></li>
+            <li><a href="https://linkedin.com/in/david-miner1234"><img height="32" fill="white" src="img/linkedin.svg" alt="LinkedIN logo"></a></li>
             <hr />
             <ul>
                 <li>Images thanks to<a href="https://www.freesvgillustration.com/illustrations/" target="_blank">FreeSVGIllustrations.com</a>
