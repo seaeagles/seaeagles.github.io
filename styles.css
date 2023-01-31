@@ -81,10 +81,15 @@ nav, main {
 }
 nav {
     padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
 }
 ul {
     list-style: none;
     padding: 0;
+    
 }
 
 ul li a {
@@ -131,8 +136,9 @@ ul li a {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 50% 50%;
-    margin: auto;
     margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-top: 3.5rem;
 
 }
 .about-grid > img {
