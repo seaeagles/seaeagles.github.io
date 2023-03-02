@@ -1,11 +1,13 @@
 :root {
-    --main: #028090;
-    --lightyellow: #f0f3bd;
+    --main: #89c2d9;
+    /* #38a3a5; */
+    --lightred: #ffb3c1;
+    /* f0f3bd; */
     --offwhite: #fbfbfb;
     --lightblue: #ecf0f6;
     --flatgreen: #3C6E71;
     --slate: #353535;
-    --lightgreen: #84A98C;
+    --lightgreen: #57cc99;
 }
 
 * {
@@ -13,7 +15,7 @@
 }
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Enriqueta', sans-serif;
 }
 
 /* Utility Classes */
@@ -95,12 +97,12 @@ ul {
 ul li a {
     color: white;
     text-decoration: none;
-    padding: 1rem;
+    padding: .2rem;
 }
 
 /* Hero Styles */
 .hero {
-    padding: 8rem 1rem;
+    padding: 1rem 1rem;
     background-color: linear-gradient(var(--main), #028090);
 }
 .card {
@@ -111,7 +113,7 @@ ul li a {
     font-size: 1.3rem;
 }
 .card img {
-    border: 1px solid var(--lightyellow);
+    /* border: 1px solid var(--lightred); */
     border-radius: 3rem;
     max-width: 50%;
     object-fit: cover;
@@ -121,25 +123,24 @@ ul li a {
 }
 
 .hero .button {
-    color: var(--main);
-    background-color: var(--lightyellow);
+    color: var(--offwhite);
+    background-color: var(--lightred);
 }
 
 /* About Grid media object */
 
 .about-grid {
     max-width: 500px;
-    background-color: #f0f3bd;
+    background-color: var(--lightred);
     color: var(--slate);
     border-radius: 8px;
     overflow: hidden;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 50% 50%;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     margin-left: 1rem;
     margin-top: 3.5rem;
-
 }
 .about-grid > img {
     width: 100%;
@@ -189,7 +190,7 @@ section.projects a.button {
 
 section.projects a:hover {
     color: var(--main);
-    background-color: var(--lightyellow);
+    background-color: var(--lightred);
     transition: all 1s;
 }
 
@@ -267,15 +268,24 @@ a.button#fixbutton {
     .gold {
         grid-column: span 2;
     }
+    form {
+        display: block;
+    }
 }
 @media screen and (max-width: 400px) {
     .grid {
         grid-template-columns: 1fr;
     }
+    form {
+        display: block;
+    }
 }
 @media screen and (min-width: 600px) {
     .grid {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    form {
+        display: block;
     }
 }
 
@@ -284,11 +294,11 @@ a.button#fixbutton {
  .newsletter {
     padding: 3rem;
     background-color: var(--flatgreen);
-    background: linear-gradient(#fdfcdc, var(--main)); 
+    background: linear-gradient(var(--lightred), var(--main)); 
  }
 .newsletter h2 {
     text-align: center;
-    color: var(--main);
+    color: var(--offwhite);
 }
  .newsletter form {
     display: flex;
@@ -326,6 +336,7 @@ a.button#fixbutton {
  /* Footer Styles */
 
  footer {
+    font-family: 'Enriqueta', sans-serif;
     background-color: var(--main);
     padding: 3rem;
     color: var(--lightblue);
@@ -336,4 +347,8 @@ a.button#fixbutton {
     padding: 0;
     display: flex;
     justify-content: center;
+ }
+ 
+ footer ul li {
+    font-size: 9px;
  }
