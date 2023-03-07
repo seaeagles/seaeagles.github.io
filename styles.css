@@ -1,8 +1,7 @@
 :root {
     --main: #89c2d9;
     /* #38a3a5; */
-    --lightred: #ffb3c1;
-    /* f0f3bd; */
+    --lightred: #BE4D25;
     --offwhite: #fbfbfb;
     --lightblue: #ecf0f6;
     --flatgreen: #3C6E71;
@@ -132,7 +131,7 @@ ul li a {
 .about-grid {
     max-width: 500px;
     background-color: var(--lightred);
-    color: var(--slate);
+    color: var(--offwhite);
     border-radius: 8px;
     overflow: hidden;
     display: grid;
@@ -216,12 +215,12 @@ section.projects a:hover {
 
 a.button#fixbutton {
     margin: auto;
-    margin-top: 14rem;
+    margin-top: 1rem;
 }
 
 .experience .product-card {
-    color: var(--flatgreen);
-    border: 2px solid var(--flatgreen);
+    color: var(--main);
+    border: 2px solid var(--main);
     border-radius: 0.75rem;
     padding: 1.5rem;
     text-align: center;
@@ -247,7 +246,7 @@ a.button#fixbutton {
 .experience .button {
     display: block;
     color: white;
-    background-color: var(--flatgreen);
+    background-color: var(--main);
     transform: translateY(40px);
 }
 
