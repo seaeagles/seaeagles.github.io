@@ -5,15 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap"
-      rel="stylesheet"
-    /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;600&display=swap" rel="stylesheet">
+    <script defer src="index.js"></script>
     <title>David Miner - Frontend Developer</title>
 </head>
 <body>
@@ -54,7 +49,7 @@
                 <h5>My name is David, and I am a frontend developer based in Rochester, New York. </h5>
                 <a href="https://github.com/seaeagles" target="_blank" class="button">Check Out My Github</a>
             </div>
-                <img height="400" src="img/birds.svg"/>
+                <img id="birds-img" height="400" src="img/birds.svg"/>
              </div>
             </section>
 
@@ -66,61 +61,71 @@
                 <div class="card">
                     <div class="text">
                         <h3>Dragon Spawner</h3>
-                        <p>Constructed with MVC design pattern, a fun web app to be used as an online click counter with various dragon types to choose from. </p>
+                        <p>Featuring an easy-to-implement MVC design pattern, this app gives you a choice from five unique dragon types, each with its own color scheme. Attached to each dragon is a counter that can be incremented with a user click.</p>
                         <a href="https://seaeagles.github.io/dragonsproj/" target="_blank" class="button">View Project</a>
                     </div>
-                    <img src="img/mvcdragon.png" alt="screenshot of dragon project page" />
+                    <img class="project-imgs" src="img/mvcdragon.png" alt="screenshot of dragon project page" />
                 </div>
                 <div class="card reverse">
+                    <div class="text">
+                    <h3>Online Markdown Editor</h3>
+                        <p>Built with ReactJS and Vite, a web app designed for users to create and edit content using markdown syntax. It features an editor that enables users to convert plain text to markdown and vice versa. The app provides real-time updates, so users can view their content as they type.</p>
+                        <a href="https://seaeagles.github.io/markdown-previewer/" class="button">View Project</a>
+                    </div>
+                    <img class="project-imgs" src="img/markdownpreviewerscreenshot.png" alt="Image of the markdown previewer." />
+                </div>
+                <div class="card">
                     <div class="text">
                         <h3>Password Generator</h3>
                         <p>This is a simple web app you can use to generate a random password. There are a couple options you can select to add complexity to the generated password. This was an exercise mainly to practice some JS fundamentals, but who can't use a new password?</p>
                         <a href="https://seaeagles.github.io/Password-Box/" target="_blank" class="button">View Project</a>
                     </div>
-                    <img src="img/passboximage.png" alt="screenshot of password generator project page" />
+                    <img class="project-imgs" src="img/passboximage.png" alt="screenshot of password generator project page" />
                 </div>
-                <div class="card">
+                <div class="card reverse">
                     <div class="text">
-                        <h3>Technical Document Page</h3>
-                        <p>This is a project of a technical document page</p>
-                        <a href="" class="button">View Project</a>
+                    <h3>The Reactulator</h3>
+                        <p>A refactored calculator built with ReactJS and Vite. With this project I inteded to upgrade my existing calculator to a more sophisticated and modern web app. The calculator is now more sleek and efficient than ever, as well as scalable and dynamic so that future components can be added and modified as needed.</p>
+                        <a href="https://seaeagles.github.io/reactulator/" class="button">View Project</a>
                     </div>
-                    <img src="" alt="" />
-                </div>
+                    <img class="project-imgs" src="img/reactulatorscreenshot.png" alt="Preview of the web app 'reactulator' featuring a calculator." />
+
             </section>
             <section id="workexperience" class="experience">
                 <h2>Products Gallery</h2>
 
                 <div class="flex gap justified products">
                     
-                    <div class="product-card" id="product-card1">
+                    <div id="jobcard1" class="product-card">
+                        <button class="skills-btn" onclick="generateSkills1()">Tools and skills learned</button>
                         <h3>Application Support Analyst</h3>
-                        <img src="img/calero_mdsl_Logo.svg" height="70" width="150" alt="calero-mdsl logo"/>
-                        <ul class="black-text">
+                        <img src="img/calero_mdsl_Logo.svg" height="70" width="130" alt="calero-mdsl logo"/>
+                        <!-- <ul class="black-text">
                             <li>TEM/Fintech app. support</li>
                             <li>Microsoft SQL(SMSS), database management</li>
                             <li>Product implementation & QA testing</li>
-                        </ul>
+                        </ul> -->
                         <p class="black-text small">Years employed</p>
-                        <p class="price">May 2021 - Present</p>
-                        <a href="https://www.caleromdsl.com/" class="button" id="fixbutton">Visit them here</a>
+                        <p class="price">May 2021 - Feb 2023</p>
+                        <a href="https://www.caleromdsl.com/" class="joblink button" id="fixbutton1">Visit them here</a>
                     </div>
                 <div class="flex gap justified products">
 
-                    <div class="product-card">
+                    <div id="jobcard2" class="product-card">
+                        <button class="skills-btn" onclick="generateSkills2()">Tools and skills learned</button>
                         <h3>Technical Support Engineer</h3>
-                        <img src="img/sutherland-global-services-vector-logo.svg" 
+                        <img height="100" width="100" src="img/sutherland-global-services-vector-logo.svg" 
                         alt="Sutherland Global logo"/>
                         <img height="70" width="70" src="img/Proofpoint-vector-logo.svg" alt="proofpoint logo"/>
-                        <ul class="black-text">
+                        <!-- <ul class="black-text">
                             <li>SMTP, Email Security, Firewalls</li>
                             <li>Bash (unix shell)</li>
                             <li>Salesforce, JIRA, CRM</li>
-                        </ul>
+                        </ul> -->
                         <p class="black-text small">Years employed</p>
                         <p class="price">April 2020 - May 2021</p>
                         
-                        <a href="https://www.sutherlandglobal.com/" class="button" id="fixbutton">Visit them here</a>
+                        <a href="https://www.sutherlandglobal.com/" class="joblink button" id="fixbutton2">Visit them here</a>
                     </div>
                     
                         <!-- <div class="flex gap justified products">

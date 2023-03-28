@@ -1,7 +1,8 @@
 :root {
     --main: #89c2d9;
     /* #38a3a5; */
-    --lightred: #BE4D25;
+    --lightred: #9b1d6bce;
+    /* BE4D25; */
     --offwhite: #fbfbfb;
     --lightblue: #ecf0f6;
     --flatgreen: #3C6E71;
@@ -126,6 +127,11 @@ ul li a {
     background-color: var(--lightred);
 }
 
+#birds-img {
+    filter: hue-rotate(70deg);
+
+}
+
 /* About Grid media object */
 
 .about-grid {
@@ -133,13 +139,13 @@ ul li a {
     background-color: var(--lightred);
     color: var(--offwhite);
     border-radius: 8px;
-    overflow: hidden;
+    overflow: auto;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 50% 50%;
     margin-bottom: 1.5rem;
-    margin-left: 1rem;
-    margin-top: 3.5rem;
+    margin-left: 4rem;
+    margin-top: 1.5rem;
 }
 .about-grid > img {
     width: 100%;
@@ -150,7 +156,7 @@ ul li a {
 
 .about-grid > h2 {
     grid-column: 2 / span 3;
-    padding: .3rem;
+    padding: 2.5rem;
 
 }
 .about-grid > p {
@@ -200,6 +206,9 @@ section.projects a:hover {
     box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
 
+/* .project-imgs {
+} */
+
 /* Products Section Styles */
 
 .experience {
@@ -213,9 +222,15 @@ section.projects a:hover {
     fill: var(--lightblue);
 }
 
-a.button#fixbutton {
-    margin: auto;
-    margin-top: 1rem;
+.joblink {
+  margin: auto;
+}
+
+#fixbutton2 {
+    margin-top: 37px;
+}
+#fixbutton1 {
+    margin-top: 50px;
 }
 
 .experience .product-card {
@@ -226,8 +241,8 @@ a.button#fixbutton {
     text-align: center;
 }
 
-.product-card#product-card1 > img {
-    margin-top: 2.7rem;
+.product-card#jobcard1 > img {
+    margin-top: 1rem;
 }
 .product-card ul li {
     padding: 4px 0;
@@ -235,7 +250,6 @@ a.button#fixbutton {
     margin: 1px;
 }
 .product-card ul li:hover {
-    background-color: silver;
     border: 1px solid black;
     border-radius: 4px;
 }
@@ -254,6 +268,18 @@ a.button#fixbutton {
     content: '✓';
     margin-right: 4px;
     color: var(--main);
+}
+
+.skills-btn {
+    box-shadow: 3px 4px 0px 0px #9fb4f2;
+	background:linear-gradient(to bottom, var(--main) 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius: 15px;
+    color: whitesmoke;
+}
+.skills-btn:hover {
+    background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
 }
 
 .grid {
