@@ -3,8 +3,8 @@
 function generateSkills(jobCardId) {
     const jobCard = document.getElementById(jobCardId);
     const skills = (jobCardId === "jobcard1") 
-      ? ["", "TEM/MDM application support", "Microsoft SQL(SMSS)", "JIRA, Zendesk, Azure DevOps", "Product Implementation", "QA testing"]
-      : ["", "SMTP, TCP/IP protocols", "DNS: SPF/DKIM/DMARC", "Firewalls, web security", "Network troubleshooting", "Linux (bash)/CLI"];
+      ? ["TEM/MDM application support", "Microsoft SQL(SMSS)", "JIRA, Zendesk, Azure DevOps", "Product Implementation", "QA testing"]
+      : ["SMTP, TCP/IP protocols", "DNS: SPF/DKIM/DMARC", "Firewalls, web security", "Network troubleshooting", "Linux (bash)/CLI"];
 
     if (jobCard.disabled) {
         alert("Error! Only one click per visit, please.");
@@ -24,4 +24,16 @@ function generateSkills(jobCardId) {
         jobCard.appendChild(skillsList)
     }
 
+// Shake animation when mouseover logos 
 
+    const logos = document.querySelectorAll('.logo');
+
+    logos.forEach((logo) => {
+      logo.addEventListener('mouseover', () => {
+        logo.classList.add('animate__animated', 'animate__shakeX');
+      });
+    
+      logo.addEventListener('mouseout', () => {
+        logo.classList.remove('animate__animated', 'animate__shakeX');
+      });
+    });
