@@ -30,10 +30,12 @@ function generateSkills(jobCardId) {
 
     logos.forEach((logo) => {
       logo.addEventListener('mouseover', () => {
-        logo.classList.add('animate__animated', 'animate__shakeX');
+        logo.classList.add('animate__animated', 'animate__tada');
       });
     
       logo.addEventListener('mouseout', () => {
-        logo.classList.remove('animate__animated', 'animate__shakeX');
+        logo.classList.remove('animate__animated', 'animate__tada');
       });
     });
+
+    

@@ -110,7 +110,7 @@ ul li a {
     margin: 0 2rem 4rem;
     justify-content: space-around;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 .card img {
     /* border: 1px solid var(--lightred); */
@@ -135,7 +135,7 @@ ul li a {
 /* About Grid media object */
 
 .about-grid {
-    max-width: 500px;
+    max-width: 350px;
     background-color: var(--lightred);
     color: var(--offwhite);
     border-radius: 8px;
@@ -156,7 +156,8 @@ ul li a {
 
 .about-grid > h2 {
     grid-column: 2 / span 3;
-    padding: 2.5rem;
+    margin-top: 22%;
+    /* padding: 2.3rem; */
 
 }
 .about-grid > p {
@@ -167,7 +168,7 @@ ul li a {
 .contacts {
     grid-column: 2 / span 3;
     padding: 5px;
-    margin-bottom: 1.7rem;
+    margin-bottom: 1rem;
 }
 .contacts > p {
     margin: auto;
