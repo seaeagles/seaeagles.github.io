@@ -46,7 +46,8 @@
             <div class="card">
             <div class="flex col">
                 <h1>Welcome to my page! </h1>
-                <h5>My name is David, and I am a frontend developer based in Rochester, New York. </h5>
+                <h4>My name is David, and I am a frontend developer based in Rochester, New York. </h4>
+                <h5>Tools and Tech: HTML, CSS, Javascript, ReactJS, Vite, bootstrap... </h5>
                 <a href="https://github.com/seaeagles" target="_blank" class="button">Check Out My Github</a>
             </div>
                 <img id="birds-img" height="400" src="img/birds.svg"/>
@@ -97,14 +98,10 @@
                 <div class="flex gap justified products">
                     
                     <div id="jobcard1" class="product-card">
-                        <button class="skills-btn" onclick="generateSkills1()">Tools and skills learned</button>
+                        <label for="skills1-btn">Click! -></label>
+                        <button id="skills1-btn" class="skills-btn" onclick="generateSkills('jobcard1')">Tools and skills learned</button>
                         <h3>Application Support Analyst</h3>
                         <img src="img/calero_mdsl_Logo.svg" height="70" width="130" alt="calero-mdsl logo"/>
-                        <!-- <ul class="black-text">
-                            <li>TEM/Fintech app. support</li>
-                            <li>Microsoft SQL(SMSS), database management</li>
-                            <li>Product implementation & QA testing</li>
-                        </ul> -->
                         <p class="black-text small">Years employed</p>
                         <p class="price">May 2021 - Feb 2023</p>
                         <a href="https://www.caleromdsl.com/" class="joblink button" id="fixbutton1">Visit them here</a>
@@ -112,16 +109,12 @@
                 <div class="flex gap justified products">
 
                     <div id="jobcard2" class="product-card">
-                        <button class="skills-btn" onclick="generateSkills2()">Tools and skills learned</button>
+                        <label for="skills2-btn">Click! -></label>
+                        <button id="skills2-btn" class="skills-btn" onclick="generateSkills('jobcard2')">Tools and skills learned</button>
                         <h3>Technical Support Engineer</h3>
                         <img height="100" width="100" src="img/sutherland-global-services-vector-logo.svg" 
                         alt="Sutherland Global logo"/>
                         <img height="70" width="70" src="img/Proofpoint-vector-logo.svg" alt="proofpoint logo"/>
-                        <!-- <ul class="black-text">
-                            <li>SMTP, Email Security, Firewalls</li>
-                            <li>Bash (unix shell)</li>
-                            <li>Salesforce, JIRA, CRM</li>
-                        </ul> -->
                         <p class="black-text small">Years employed</p>
                         <p class="price">April 2020 - May 2021</p>
                         
@@ -162,6 +155,7 @@
             </section>
     </main>
     <footer>
+        <div>
         <ul class="socialmedia">
             <li><a href="https://github.com/seaeagles" target="_blank"><img height="32" fill="white" src="img/github.svg" alt="github logo"></a></li>
             <li><a href="https://linkedin.com/in/david-miner1234"><img height="32" fill="white" src="img/linkedin.svg" alt="LinkedIN logo"></a></li>
@@ -170,8 +164,8 @@
                 <li>Images thanks to<a href="https://www.freesvgillustration.com/illustrations/" target="_blank">FreeSVGIllustrations.com</a>and<a href="https://www.svgrepo.com/" target="_blank">SVGRepo.com</a>
                 </li>
             </ul>
-
         </ul>
+        </div>
     </footer>
 </body>
 </html>
