@@ -251,7 +251,7 @@ section.projects a:hover {
     margin: 1px;
 }
 .product-card ul li:hover {
-    border: 1px solid black;
+    border: 1px solid bisque;
     border-radius: 4px;
 }
 .experience .price {
@@ -271,17 +271,19 @@ section.projects a:hover {
     color: var(--main);
 }
 
-.skills-btn {
-    box-shadow: 3px 4px 0px 0px #9fb4f2;
-	background:linear-gradient(to bottom, var(--main) 5%, #476e9e 100%);
-	background-color:#7892c2;
-	border-radius: 15px;
-    color: var(--offwhite);
+
+ .skills-btn {
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    background-color: #4eb5f1;
+    box-shadow: 3px 4px 0px 0px black;
 }
+
 .skills-btn:hover {
     background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
-	background-color:#476e9e;
-}
+	background-color: #4095c6;
+} 
 
 .grid {
     margin: 1rem 0;
