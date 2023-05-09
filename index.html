@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;600&display=swap" rel="stylesheet">
+    <!-- <link rel="icon" href="img/"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script defer src="index.js"></script>
     <title>David Miner - Frontend Developer</title>
@@ -15,41 +16,40 @@
 <body>
     <nav class="flex center">
         <header>
-            <!-- <img src"./logo.svg" alt="" /> -->
             <h1>David Miner - Portfolio</h1>
+            <!-- <img id="birds-img" src="img/birds.svg" height="80" alt="DM" /> -->
         </header>
         <ul class="flex center">
-            <li><img src="img/pencil-svgrepo-com.svg" height="15" width="15"/><a href="#aboutme">About</a></li>
-            <li><img src="img/pyramid.svg" height="15" width="15"/><a href="#projects">Projects</a></li>
-            <li><img src="img/wisdom.svg" height="15" width="15"/><a href="#workexperience">Work Experience
-            </a></li>
-            <li><img src="img/mailletter.svg" height="15" width="15"/><a href="#contact">Contact</a></li>
+            <li><a href="#hero">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#workexperience">Work Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <main>
-        <section class="businesscard" id="aboutme">
+        <section class="tippytop" id="toppage">
             <div class="about-grid">
                 <img src="https://placekitten.com/408/287" alt="A curious kitten tilting its head" />
                 <h2>Contact Info</h2>
                     <div class="contacts">
-                        <p><img src="img/location-pointer-svgrepo-com.svg" height="32" width="30"/>Rochester, New York</p>
                         <p>
-                            <img src="img/email-svgrepo-com.svg" height="32" width="30"/>dminerur@outlook.com</p>
+                            <img src="img/location-pointer-svgrepo-com.svg" height="25" width="30"/>Rochester, New York</p>
+                        <p>
+                            <img src="img/email-svgrepo-com.svg" height="25" width="30"/> dminerUR@outlook.com</p>
                         
                         <p class="github">
-                            <a id="profile-link" href="https://linkedin.com/in/david-miner1234"><img src="img/linkedin.svg" height="32" width="30"/></a>Connect with me on LinkedIn
+                            <a id="profile-link" href="https://linkedin.com/in/david-miner1234"><img src="img/linkedin.svg" height="25" width="30"/></a>Connect with me on LinkedIn
                         </p>
                     </div>
             </div>
         </section>
 
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="card">
             <div class="flex col">
-                <h1>Hello! My name is David. I'm a frontend web developer based in Rochester, NY.</h1>
-                <h3>Thank you for visiting my page!</h3>
-                <h5>Here are my Top Tech and Tools Picks: 
-                    HTML, CSS, Javascript, ReactJS, Vite, bootstrap...
+                <h1>Hi there! My name is David.</h1>
+                <h3>I enjoy building web pages and applications through frontend development.</h3>
+                <h5> Want to know what I've been working on? Check out my current favorite tools
                     <hr />
                     <img class="logo" src="img/html5.svg" height="130" alt="html5 logo"/>
                     <img class="logo" src="img/css-3.svg" height="130" alt="css logo" /> 
@@ -57,9 +57,11 @@
                     <img class="logo" src="img/react-logo.svg" height="130" alt="react logo"/>
                     <img class="logo" src="img/vite-logo.svg" height="130" alt="vite logo" />
                 </h5>
+                <div class="top-button">
                 <a href="https://github.com/seaeagles" target="_blank" class="button">Check Out My Github</a>
+                </div>
             </div>
-                <img id="birds-img" height="400" src="img/birds.svg"/>
+                <!-- <img id="birds-img" height="370" src="img/birds.svg"/> -->
              </div>
             </section>
 
@@ -98,7 +100,7 @@
 
             </section>
             <section id="workexperience" class="experience">
-                <h2>Products Gallery</h2>
+                <h2>Previous Opportunities</h2>
 
                 <div class="flex gap justified products">
                     
@@ -145,18 +147,9 @@
 
             <section id="contact" class="newsletter">
                 <h2>Get in touch</h2>
-                <form action="" method="">
-                    <label for="signup">Email:</label>
-                    <input id="signup" type="email" placeholder="Please type your email" required>
-                    <br />
-                    <label for="textinput">Name:</label>
-                    <input id="textinput" type="text" placeholder="Name">
-                    <br />
-                    <label for="message">Message:</label>
-                    <textarea maxlength="250" id="message" name="comments" rows="8" placeholder="Type your message here..." required></textarea>
-
-                    <button class="button">Submit</button>
-                </form>
+                <span class="email-tag">
+                    <a href="mailto:dminerur@outlook.com">dminerUR@outlook.com</a>
+                </span>
             </section>
     </main>
     <footer>
@@ -164,7 +157,7 @@
         <ul class="socialmedia">
             <li><a href="https://github.com/seaeagles" target="_blank"><img height="32" fill="white" src="img/github.svg" alt="github logo"></a></li>
             <li><a href="https://linkedin.com/in/david-miner1234"><img height="32" fill="white" src="img/linkedin.svg" alt="LinkedIN logo"></a></li>
-            <hr />
+            <img id="twofacedarrow" src="img/doublesidedarrow.svg" height="140" width="800"/>
             <ul>
                 <li>Images thanks to<a href="https://www.freesvgillustration.com/illustrations/" target="_blank">FreeSVGIllustrations.com</a>and<a href="https://www.svgrepo.com/" target="_blank">SVGRepo.com</a>
                 </li>
